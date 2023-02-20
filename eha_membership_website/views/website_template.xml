@@ -1,0 +1,817 @@
+<odoo>
+    <data>
+        <!--compare plans-->
+        <template id="compare_plans">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty"/>
+                <div class="comparison-container">
+
+                    <h2 class="section-title pt-4">
+                        Compare Our
+                        <span class="text-primary">Membership Plans</span>
+                    </h2>
+
+                    <table class="comparison">
+                        <tr>
+                            <th colspan="2"></th>
+                            <th class="plan-standard">Standard</th>
+                            <th class="plan-premium">Premium</th>
+                            <th class="plan-international">Premium International</th>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="3">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/ambulance.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Transportation between hospitals</b>
+                                within metropolitan Kano and Abuja
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Domestic medical emergency and evacuation services</b>
+                                (within Nigeria)
+                            </td>
+                            <td class="plan-standard">
+                                <b>–</b>
+                            </td>
+                            <td class="plan-premium">
+                                <b>–</b>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>International medical emergency and evacuation services</b>
+                            </td>
+                            <td class="plan-standard">
+                                <b>–</b>
+                            </td>
+                            <td class="plan-premium">
+                                <b>–</b>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="3">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/dental.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Annual dental checks and cleaning</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>
+                                    <b>1</b>
+                                    discounted session/year
+                                </small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                                <small>
+                                    <b>1</b>
+                                    session/year
+                                </small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                                <small>
+                                    <b>1</b>
+                                    session/year
+                                </small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Dental Consultation</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Primary Dental Care:</b>
+                                <br/>relief of pain, fillings, nonsurgical procedures, extractations, preventive care,
+                                scaling and polishing
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>
+                                    <b>20%</b>
+                                    discounted
+                                </small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>
+                                    <b>20%</b>
+                                    discounted
+                                </small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>
+                                    <b>20%</b>
+                                    discounted
+                                </small>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/home care.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Home Care Services</b>
+                            </td>
+                            <td class="plan-standard">
+                                <small>
+                                    <b>cost per visit</b>
+                                </small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                                <small>
+                                    <b>12</b>
+                                    visits/year
+                                </small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                                <small>
+                                    <b>12</b>
+                                    visits/year
+                                </small>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="3">
+                                <div class="service-img">
+                                    <img class="service-img-inner" src="/eha_website/static/src/img/service/lab.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>ECG</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Ultrasound</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Lab Testing</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="4">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/ophtalmology.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Annual Eye examination</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Ophthalmologist Consultation</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Eye testing, contact lens and glasses prescriptions</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Treatment of acute and chronic eye diseases</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="2">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/pharmaceutical.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Pharmaceutical Consultation</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Supply of prescribed medication</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header" rowspan="8">
+                                <div class="service-img">
+                                    <img class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/preventive care.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Cancer Screening</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Routine Immunizations for 0 -5 years:</b>
+                                <br/>BCG, DPT, Measles, Oral Polio, Pentavalent vaccines and Vitamin A supplement
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Additional Immunizations:</b>
+                                <br/>Chicken Pox, Hepatitis B, HPV, Influenza, Meningitis, MMR, Rotavirus Yellow Fever
+                                vaccines
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">Family Planning:
+                                <br/>
+                                <b>Contraceptives</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">Family Planning:
+                                <br/>
+                                <b>Preconception counseling management</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">Family Planning:
+                                <br/>
+                                <b>Prenatal services (including ultrasounds)</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">Family Planning:
+                                <br/>
+                                <b>STD testing and counseling</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-percentage"></i>
+                                <small>discounted</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="service">
+                                <b>Unlimited Physician Consultations and Followup visits</b>
+                            </td>
+                            <td class="plan-standard">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-premium">
+                                <i class="fas fa-check"></i>
+                            </td>
+                            <td class="plan-international">
+                                <i class="fas fa-check"></i>
+                            </td>
+                        </tr>
+                        <tr class="service-row">
+                            <td class="service-header">
+                                <div class="service-img">
+                                    <img name="test" class="service-img-inner"
+                                         src="/eha_website/static/src/img/service/telemedicine.png"/>
+                                </div>
+                            </td>
+                            <td class="service">
+                                <b>Telemedicine</b>
+                            </td>
+                            <td class="plan-standard">
+                                <small>
+                                    <b>available at a cost</b>
+                                </small>
+                            </td>
+                            <td class="plan-premium">
+                                <small>
+                                    <b>available at a cost</b>
+                                </small>
+                            </td>
+                            <td class="plan-international">
+                                <small>
+                                    <b>available at a cost</b>
+                                </small>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div class="text-center mt-5 mb-4">
+                        <a href="/eha_membership/category" class="btn-primary btn-lg">Select your plan category</a>
+                    </div>
+                </div>
+            </t>
+        </template>
+        <template id="select_membership_category" name="Select Membership Category">
+            <t t-name="website.membership_category_page" name="EHA Membership Website Page">
+                <t t-call="website.layout">
+                    <t t-set="title">Membership Category</t>
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_cover parallax page" data-scroll-background-ratio="0"
+                                style="background-image: none;">
+                            <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                                style="background-image: url(&quot;/eha_website/static/src/img/bg-plans.jpg&quot;); background-position: 48.83% 30.35%;"/>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title pt48 pb0" data-name="Title">
+                                        <h1 class="title-banner text-center">
+                                            <span>Our</span>
+                                            <span class="text-highlight">
+                                                Membership Category
+                                            </span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="tab-content">
+                            <div class="tabs">
+                                <a t-attf-href="/eha_membership/individual-category/{{'Individual'}}" class="tablink col-sm plan-standard"
+                                        id="defaultOpen">Individual
+                                </a>
+                                <a t-attf-href="/eha_membership/family-category/{{'Family'}}" class="tablink col-sm plan-premium">Family
+                                </a>
+                                <a href="" class="tablink col-sm plan-international">
+                                    Group
+                                </a>
+                            </div>
+                        </div>
+                        <!--compare plan button -->
+                        <div class="container">
+                            <div class="pt-4 pb-5">
+                                <h2 class="section-title text-center pb-4">Not sure which plan covers your needs?</h2>
+                                <p class="text-lg text-center">You want to compare all benefits of our different
+                                    membership plans?<br/>We have listed all available benefits side by side.
+                                </p>
+                            </div>
+                            <div class="text-center pb-5">
+                                <a href="/shop/plans/compare" class="btn-primary btn-lg text-center mt-3 mb-6">Compare
+                                    plans
+                                </a>
+                            </div>
+                        </div> <!--//compare plan button-->
+                    </div>
+                </t>
+            </t>
+        </template>
+        <template id="select_individual_membership_plan" name="Select Membership Plan">
+            <t t-name="website.single_membership_plan_page">
+                <t t-call="website.layout">
+                    <t t-set="title">Membership Subscription</t>
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_cover parallax page" data-scroll-background-ratio="0"
+                                style="background-image: none;">
+                            <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                                style="background-image: url(&quot;/eha_website/static/src/img/bg-plans.jpg&quot;); background-position: 48.83% 30.35%;"/>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title pt48 pb0" data-name="Title">
+                                        <h1 class="title-banner text-center">
+                                            <span>Our</span>
+                                            <span class="text-highlight">
+                                                Membership Plan
+                                            </span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h3 class="text-purple text-center mt-5 mb-4">Choose a membership plan</h3>
+                        <div class="tab-content">
+                            <t t-foreach="plans" t-as="plan">
+                                <div class="container plans mt-5">
+                                    <t t-foreach="plan.get('products')" t-as="product">
+                                        <t t-if=" 'youth' in product.product_id.name.lower()">
+                                            <t t-set="pclass" t-value="'plan-youth'"/>
+                                            <t t-set="icon" t-value="'icon-youth.png'"/>
+                                        </t>
+
+                                        <t t-if=" 'adult' in product.product_id.name.lower()">
+                                            <t t-set="pclass" t-value="'plan-adult'"/>
+                                            <t t-set="icon" t-value="'icon-adult.png'"/>
+                                        </t>
+
+                                        <t t-if=" 'senior' in product.product_id.name.lower()">
+                                            <t t-set="pclass" t-value="'plan-senior'"/>
+                                            <t t-set="icon" t-value="'icon-senior.png'"/>
+                                        </t>
+
+                                        <div t-attf-class="plan-teaser {{pclass}}" style="background-color: #55acba;">
+                                            <img class="plan-image"
+                                                t-attf-src="/eha_website/static/src/img/{{icon}}"/>
+                                            <h3 class="plan-title">
+                                                <span t-esc="product.product_id.name"/>
+                                            </h3>
+                                            <h4 class="plan-subtitle">
+                                                <span>Up to
+                                                    <span t-esc="plan.get('category_discount')"/>
+                                                    % discount
+                                                </span>
+                                            </h4>
+                                            <h4 class="plan-subtitle"
+                                                t-if="product and 'senior' not in product.product_id.name.lower()">
+                                                <span t-esc="product.age_min"/>-<span t-esc="product.age_max"/> Years Old
+                                            </h4>
+                                            <h4 class="plan-subtitle"
+                                                t-else="1">
+                                                <span t-esc="product.age_min"/> +Years Old
+                                            </h4>
+                                          
+                                            <t t-if="product.display_on_website == true">
+                                                <div class="plan-details"
+                                                    t-if="product and 'family' not in product.product_id.name.lower()">
+                                                    ₦<span t-esc="product.product_id.list_price"/>/ Year
+                                                </div>
+                                                <!-- <div class="plan-details" 
+                                                    t-if="product and 'family' in product.product_id.name.lower()">
+                                                    <span/> Customize your plan to fit your family.
+                                
+                                                </div> -->
+                                                <a t-attf-href="/eha_membership/subscribe/{{product.product_id.name}}"
+                                                class="btn-outline-invert"
+                                                t-if="product and 'family' not in product.product_id.name.lower()">Select Plan
+                                                </a>
+                                                <!-- <a href=""
+                                                class="btn-outline-invert" t-else="1">Customise Plan
+                                                </a> -->
+                                            </t>
+                                        </div>
+                                    </t>
+                                </div>
+                            </t>                                
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+        <!--Family membership view-->
+        <template id="select_family_membership_plan" name="customize_family_membership_plan">
+            <t t-name="website.family_membership_plan_page">
+                <t t-call="website.layout">
+                    <t t-set="title">Membership Subscription</t>
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <section class="s_cover parallax page" data-scroll-background-ratio="0"
+                                style="background-image: none;">
+                            <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                                style="background-image: url(&quot;/eha_website/static/src/img/bg-plans.jpg&quot;); background-position: 48.83% 30.35%;"/>
+                            <div class="container">
+                                <div class="row s_nb_column_fixed">
+                                    <div class="col-lg-12 s_title pt48 pb0" data-name="Title">
+                                        <h1 class="title-banner text-center">
+                                            <span>Our</span>
+                                            <span class="text-highlight">
+                                                Family Membership Plan
+                                            </span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h3 class="text-purple text-center mt-5 mb-4">Customize your family membership plan</h3>
+                        <div class="tab-content">
+                            <t t-foreach="plans" t-as="plan">
+                                <div class="container plans mt-5" style="background-color: #55acba;">
+                                    <!-- <t t-foreach="categories" t-as="cat"> -->
+                                        <t t-if="plan.get('name').lower()=='standard'">
+                                            <t t-set="pclass" t-value="'plan-standard'"/>
+                                            <t t-set="icon" t-value="'icon-family.png'"/>
+                                        </t>
+
+                                        <t t-if="plan.get('name').lower()=='premium'">
+                                            <t t-set="pclass" t-value="'plan-premium'"/>
+                                            <t t-set="icon" t-value="'icon-family.png'"/>
+                                        </t>
+
+                                        <t t-if="plan.get('name').lower()=='international'">
+                                            <t t-set="pclass" t-value="'plan-international'"/>
+                                            <t t-set="icon" t-value="'icon-family.png'"/>
+                                        </t>
+
+                                        <div t-attf-class="plan-teaser {{pclass}}" style="background-color: #55acba;">
+                                            <img class="plan-image"
+                                                t-attf-src="/eha_website/static/src/img/{{icon}}"/>
+                                                <h3 class="plan-title">
+                                                    <span t-esc="plan.get('name')"/>
+                                                </h3>
+                                            
+                                            <t>
+                                                <div class="plan-details">
+                                                    <span>Up to
+                                                        <span t-esc="plan.get('category_discount')"/>
+                                                        % discount
+                                                    </span>
+            
+                                                </div>
+                                                <a href="/family-standard-subscription"
+                                                    class="btn-outline-invert" 
+                                                    t-if="plan.get('name').lower()=='standard'">Customise Plan
+                                                </a>
+                                                <a href="/family-premium-subscription"
+                                                    class="btn-outline-invert" 
+                                                    t-if="plan.get('name').lower()=='premium'">Customise Plan
+                                                </a>
+                                                <a href="/family-premium-international-subscription"
+                                                    class="btn-outline-invert" 
+                                                    t-if="plan.get('name').lower()=='international'">Customise Plan
+                                                </a>
+                                            </t>
+                                        </div>
+                                    <!-- </t> -->
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+        <!--membership subscription-->
+        <template id="single_subscription_detail">
+            <t t-call="website.layout">
+                <div class="tab-content">
+                    <t t-foreach="products" t-as="prod">
+                        <t t-if=" 'standard' in prod.name.lower()">
+                            <t t-set="planClass" t-value="'plan-standard'"/>
+                        </t>
+            
+                        <t t-if=" 'premium' in prod.name.lower()">
+                            <t t-set="planClass" t-value="'plan-premium'"/>
+                        </t>
+            
+                        <t t-if=" 'international' in prod.name.lower()">
+                            <t t-set="planClass" t-value="'plan-international'"/>
+                        </t>
+                        <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
+                            <section class="container" id="product_detail" >
+                                <div id="wrap" class="oe_structure oe_empty"/>
+                                <div t-attf-class="container {{planClass}}">
+                                    <div class="row mt-5">
+                                        <ul class="breadcrumb">
+                                            <!-- <li class="breadcrumb-item">
+                                                <a t-att-href="keep(category=0)">Products</a>
+                                            </li>
+                                            <li t-if="category" class="breadcrumb-item">
+                                                <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
+                                                   t-field="category.name"/>
+                                            </li> -->
+                                            <li class="breadcrumb-item active">
+                                                <span t-field="prod.name"/>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-md-4">
+                                            <div class="product-img">
+                                                <t t-if=" 'youth' in prod.name.lower()">
+                                                    <img src="/eha_website/static/src/img/icon-youth.png"/>
+                                                </t>
+                                                <t t-if=" 'adult' in prod.name.lower()">
+                                                    <img src="/eha_website/static/src/img/icon-adult.png"/>
+                                                </t>
+                                                <t t-if=" 'senior' in prod.name.lower()">
+                                                    <img src="/eha_website/static/src/img/icon-senior.png"/>
+                                                </t>
+                                                <!-- <t t-if=" 'family' in product.name.lower() ">
+                                                    <img src="/eha_website/static/src/img/icon-family.png"/>
+                                                </t> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8" id="product_details">
+                                            <h3 class="plan-title" itemprop="name" t-field="prod.name"/>
+                                            <t>
+                                                <t>
+                                                    <!-- <h4 class="plan-subtitle">
+                                                        <span t-esc="prod.name"/>
+                                                    </h4> -->
+                                                    <h4>
+                                                        ₦<span t-esc="prod.list_price"/>/ Year
+                                                    </h4>
+                                                </t>
+                                            </t>
+                                            <span itemprop="url" style="display:none;"
+                                                t-esc="'%s eha_membership/subscribe/%s' % (request.httprequest.url_root, prod.name)"/>
+                                            <form>
+                                                <div class="js_product js_main_product">
+                                                    <button role="button" id="add_to_cart"
+                                                    class="btn btn-primary btn-lg btn-round mt8 js_check_product a-submit"
+                                                    href="#">
+                                                        Subscribe
+                                                    </button>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    
+                    </t>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>       
+            
+                
+                
